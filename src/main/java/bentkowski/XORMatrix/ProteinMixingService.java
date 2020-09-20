@@ -7,11 +7,11 @@ public class ProteinMixingService {
 
         public static int[][] dp = new int[2][Nmax];
 
-        public static int K;
+
 
         public static void main(String[] args)  {
             ProteinMixingService s = new ProteinMixingService();
-            char[] seq = {'A','A','A','A','D'};
+            char[] seq = {'A','A','A','A','D','D','A','A','A','A'};
             s.xor(seq,1000000000);
         }
 
