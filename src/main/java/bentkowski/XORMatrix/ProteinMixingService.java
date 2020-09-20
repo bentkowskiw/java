@@ -12,7 +12,7 @@ public class ProteinMixingService {
         public static void main(String[] args)  {
             ProteinMixingService s = new ProteinMixingService();
             char[] seq = {'A','A','A','A','D'};
-            s.xor(seq,15);
+            s.xor(seq,1000000000);
         }
 
         public char[] xor(char[] inputSequence, int K)
