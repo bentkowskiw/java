@@ -26,7 +26,7 @@ public class ProteinMixingService {
         public static void main(String[] args)  {
             ProteinMixingService s = new ProteinMixingService();
             char[] seq = {'A','A','A','A','D','D','A','A','A','A'};
-            s.xor(seq,1000000000);
+            s.xor(seq,100000000);
         }
 
         public char[] xor(char[] inputSequence, int K)
