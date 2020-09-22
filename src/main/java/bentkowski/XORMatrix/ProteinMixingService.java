@@ -1,5 +1,19 @@
 package bentkowski.XORMatrix;
 
+
+/**
+ * This class solves the problem o N iterations on abelan group transformations
+ * this example solves the problem of applying XOR operations on numbers 0-3 or  letters
+ * A-D
+ * Results are inside matrix
+ *              i n p u t
+ *              A   B   C   D
+ *  i
+ *  n   A       A   B   C   D
+ *  p   B       B   A   D   C
+ *  u   C       C   D   A   B
+ *  t   D       D   C   B   A
+ */
 public class ProteinMixingService {
 
 
