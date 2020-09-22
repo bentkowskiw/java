@@ -39,10 +39,18 @@ public class Primes {
         this.primeNumbers.addAll(primes);
     }
 
+    /**
+     * patch to store Collection<BigInteger> as Collection<String>, cause it does not work with current db
+     *  to store BigInt
+     */
     public void save()  {
         this.primeStrings.clear();
         this.primeNumbers.forEach(number->primeStrings.add( number.toString()));
     }
+    /**
+     * patch to load Collection<BigInteger> from Collection<String>, cause it does not work with current db
+     *  to store BigInt
+     */
     public void load()  {
         this.primeNumbers.clear();
         this.primeStrings.forEach(string->primeNumbers.add(new BigInteger(string)));

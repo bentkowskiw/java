@@ -14,7 +14,7 @@ public abstract class PrimeFactorsAbstractController {
     }
 
 
-    public PrimeFactorsResult calculateFactors(@RequestParam(required = false) String number) {
+    public PrimeFactorsResultDTO calculateFactors(@RequestParam(required = false) String number) {
 
         System.out.println("Number param: " + number);
         if (null == number || number.isBlank())

@@ -54,9 +54,9 @@ public class PollardRhoPrimeFactorsService {
     }
 
     @Transactional
-    public PrimeFactorsResult findPrimeFactors(BigInteger N) {
+    public PrimeFactorsResultDTO findPrimeFactors(BigInteger N) {
 
-        PrimeFactorsResult result = new PrimeFactorsResult();
+        PrimeFactorsResultDTO result = new PrimeFactorsResultDTO();
 
         Primes primes;
         primes = load();
@@ -76,10 +76,12 @@ public class PollardRhoPrimeFactorsService {
         return result;
     }
 
+
     private void save(Primes primes)    {
         primes.save();
         entityManager.persist(primes);
     }
+
 
     private Primes load()   {
         Primes primes = entityManager.find(Primes.class, 1L);
@@ -89,7 +91,7 @@ public class PollardRhoPrimeFactorsService {
         return primes;
     }
 
-    private void factor(BigInteger N, PrimeFactorsResult result) {
+    private void factor(BigInteger N, PrimeFactorsResultDTO result) {
 
 
         if (N.compareTo(ONE) == 0) return;

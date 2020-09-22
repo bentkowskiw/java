@@ -6,8 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-
-public class PrimeFactorsResult {
+/**
+ * Data Transfer Object for PrimeFactors of a given Number
+ */
+public class PrimeFactorsResultDTO {
     private  java.util.List<BigInteger> factors;
 
 
@@ -19,7 +21,7 @@ public class PrimeFactorsResult {
     private Set<BigInteger> primes;
 
 
-    public PrimeFactorsResult() {
+    public PrimeFactorsResultDTO() {
         this.factors = new ArrayList<>();
     }
 

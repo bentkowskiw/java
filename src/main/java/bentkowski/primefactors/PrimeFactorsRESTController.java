@@ -8,7 +8,7 @@ public class PrimeFactorsRESTController extends PrimeFactorsAbstractController  
 
     @Override
     @GetMapping(value="/REST")
-    public PrimeFactorsResult calculateFactors(String number) {
+    public PrimeFactorsResultDTO calculateFactors(String number) {
         return super.calculateFactors(number);
     }
 }
