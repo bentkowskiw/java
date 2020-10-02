@@ -1,20 +1,20 @@
 package bentkowski.primefactors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.math.BigInteger;
 
 public abstract class PrimeFactorsAbstractController {
 
-    @Autowired
-    protected PollardRhoPrimeFactorsService primeFactorService;
 
-    public PrimeFactorsAbstractController() {
+    protected PrimeFactorsService primeFactorService;
+
+    public  PrimeFactorsAbstractController(PrimeFactorsService primeFactorService) {
+        this.primeFactorService = primeFactorService;
     }
 
 
-    public PrimeFactorsResultDTO calculateFactors(@RequestParam(required = false) String number) {
+    public PrimeFactorsFinder calculateFactors(@RequestParam(required = false) String number) {
 
         System.out.println("Number param: " + number);
         if (null == number || number.isBlank())

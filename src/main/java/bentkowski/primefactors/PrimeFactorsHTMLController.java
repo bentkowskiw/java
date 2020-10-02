@@ -9,6 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class PrimeFactorsHTMLController extends PrimeFactorsAbstractController {
 
+    public PrimeFactorsHTMLController(PrimeFactorsService primeFactorService) {
+        super(primeFactorService);
+    }
 
     @GetMapping(value="/")
     public ModelAndView calculate(@RequestParam(required = false) String number) {

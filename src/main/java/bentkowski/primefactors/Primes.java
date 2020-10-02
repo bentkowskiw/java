@@ -55,4 +55,6 @@ public class Primes {
         this.primeNumbers.clear();
         this.primeStrings.forEach(string->primeNumbers.add(new BigInteger(string)));
     }
+
+
 }
