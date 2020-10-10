@@ -1,4 +1,4 @@
-package bentkowski.primefactors;
+package io.bentkowski.primefactors;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -66,6 +66,10 @@ private BigInteger factorizebrent(BigInteger n) {
     } while (z.compareTo(ONE)==0);
 
     return z;
+}
+
+private BigInteger mr_min(BigInteger a, BigInteger b)   {
+return BigInteger.ONE;
 }
 
 }

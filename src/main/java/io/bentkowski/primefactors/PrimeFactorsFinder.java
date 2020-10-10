@@ -1,4 +1,4 @@
-package bentkowski.primefactors;
+package io.bentkowski.primefactors;
 
 
 

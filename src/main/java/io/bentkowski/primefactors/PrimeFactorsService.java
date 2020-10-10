@@ -1,4 +1,4 @@
-package bentkowski.primefactors;
+package io.bentkowski.primefactors;
 
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.math.BigInteger;
-import java.security.SecureRandom;
 
 
 @Service

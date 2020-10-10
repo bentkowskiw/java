@@ -1,11 +1,10 @@
-package bentkowski.primefactors;
+package io.bentkowski.primefactors;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 
 import java.util.List;
-import java.util.Set;
 
 public class PollardRhoPrimeFactorsFinder implements PrimeFactorsFinder {
     private  java.util.List<BigInteger> factors;
