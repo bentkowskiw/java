@@ -1,8 +1,7 @@
-package bentkowski.cucumber;
+package io.bentkowski.cucumber;
 
-import bentkowski.primefactors.PrimeFactorsFinder;
-import bentkowski.primefactors.PrimeFactorsService;
-import bentkowski.primefactors.PollardRhoPrimeFactorsFinder;
+import io.bentkowski.primefactors.PrimeFactorsFinder;
+import io.bentkowski.primefactors.PrimeFactorsService;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 

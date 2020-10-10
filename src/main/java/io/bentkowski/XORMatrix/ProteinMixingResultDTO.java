@@ -1,4 +1,4 @@
-package bentkowski.XORMatrix;
+package io.bentkowski.XORMatrix;
 
 
 

@@ -1,6 +1,8 @@
-package bentkowski.primefactors;
+package io.bentkowski.primefactors;
 
 
+import io.bentkowski.primefactors.PrimeFactorsFinder;
+import io.bentkowski.primefactors.PrimeFactorsService;
 import org.junit.Assert;
 
 import org.junit.jupiter.api.*;
