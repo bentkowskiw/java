@@ -1,6 +1,8 @@
 package bentkowski.XORMatrix;
 
 
+import org.springframework.stereotype.Service;
+
 /**
  * This class solves the problem o N iterations on abelan group transformations
  * this example solves the problem of applying XOR operations on numbers 0-3 or  letters
@@ -14,6 +16,8 @@ package bentkowski.XORMatrix;
  *  u   C       C   D   A   B
  *  t   D       D   C   B   A
  */
+
+@Service
 public class ProteinMixingService {
 
 
@@ -23,13 +27,9 @@ public class ProteinMixingService {
 
 
 
-        public static void main(String[] args)  {
-            ProteinMixingService s = new ProteinMixingService();
-            char[] seq = {'A','A','A','A','D','D','A','A','A','A'};
-            s.xor(seq,100000000);
-        }
 
-        public char[] xor(char[] inputSequence, int K)
+
+        public ProteinMixingResultDTO xor(char[] inputSequence, int K)
         {
 
             int tip = 0;
@@ -64,12 +64,16 @@ public class ProteinMixingService {
                 }
             }
 
+            char[] result = new char[N];
             for (int i = 0; i < N; ++i)
             {
-                System.out.print((char)(dp[tip][i] + 'A'));
-            }
+                result[i] = (char)(dp[tip][i] + 'A');
 
-            return null;
+            }
+            System.out.print(new String(result));
+            ProteinMixingResultDTO resultBean = new ProteinMixingResultDTO();
+            resultBean.setResult(result);
+            return resultBean;
         }
     }
 
